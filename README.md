@@ -1,34 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# IanMain.Dev_Portfolio
 
-## Getting Started
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
-First, run the development server:
+Welcome to my personal portfolio website repository! This project showcases my journey in the world of web development and design. Feel free to explore the various sections to learn more about me and my work.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Table of Contents
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [About](#about)
+- [Portfolio](#portfolio)
+- [Skills](#skills)
+- [Blog](#blog)
+- [Contact](#contact)
+- [License](#license)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## About
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Get to know me better through a brief introduction and my background. Visit [IanMain.Dev_Portfolio](#) to learn more.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Portfolio
 
-## Learn More
+Browse through a curated selection of my web development and design projects, each with a detailed description. Click on the links below to view the projects:
 
-To learn more about Next.js, take a look at the following resources:
+- [Project 1](#)
+- [Project 2](#)
+- [Project 3](#)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Skills
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Discover the technologies and tools I'm proficient in. This section highlights my technical skills, including:
 
-## Deploy on Vercel
+- HTML
+- CSS
+- JavaScript
+- React
+- Node.js
+- and more...
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contact
+
+Feel free to reach out to me through the provided contact form or via my social media links. Let's connect and discuss exciting projects!
+
+- Contact Form: [Contact Me](#)
+- LinkedIn: [LinkedIn Profile](#)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+© 2023 IanMain.Dev | Built with ❤️
+
