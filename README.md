@@ -33,12 +33,12 @@ Discover the technologies and tools I'm proficient in. This section highlights m
 
 ## 🐛 Known Issues:
 
-**09/14/2023:** We're aware that some of you have experienced mobile responsiveness issues when accessing our website on smaller screens and various mobile devices. We understand how frustrating this can be, and we want to assure you that we are actively addressing this issue.
+**09/14/2023:** I'm aware that some of you have experienced mobile responsiveness issues when accessing my portfolio on smaller screens and various mobile devices. I understand how frustrating this can be, and I want to assure you that I am actively addressing this issue.
 
 Issue Details:
 
-On certain mobile devices and screen sizes, elements on our website may not display or function as intended.
-This can include layout problems, text readability issues, or interactive elements that are hard to use.
+- On certain mobile devices and screen sizes, elements on our website may not display or function as intended.
+- This can include layout problems, text readability issues, or interactive elements that are hard to use.
 
 
 ## License
