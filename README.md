@@ -6,6 +6,13 @@ Welcome to my personal portfolio website repository! This project showcases my j
 
 Ian is a results-driven Information Technology specialist with a decade of experience and strong background in providing technical expertise and support across diverse IT environments. Proficient in troubleshooting hardware and software issues, optimizing system performance, and ensuring seamless network operations. Skilled in implementing security measures, data backups, and disaster recovery plans to safeguard critical information. Collaborative communicator adept at assisting users, training staff, and liaising with cross-functional teams to deliver innovative IT solutions. Committed to staying abreast of emerging technologies and industry best practices to drive continuous improvement in IT infrastructure and operations.
 
+## Project Languages:
+<p align="left">
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original-wordmark.svg" alt="javascript" width="45" height="45" />
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="45" height="45" />
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="45" height="45" />
+</p>
+
 ## Continuous Work in Progress
 
 🚧 This project is always evolving, and I'm constantly working to make it better. Here's a glimpse of what's in progress and what's coming up:**
