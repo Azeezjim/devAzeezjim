@@ -4,10 +4,12 @@ import TestimonialSlider from "../../components/TestimonialSlider";
 // framer-motion
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
+import ParticlesContainer from "../../components/ParticlesContainer";
 
 const Testimonials = () => {
   return (
-    <div className="h-full bg-primary/30 py-32 text-center">
+    <div className="bg-primary h-full bg-gradient-to-r from-primary/10 via-blue-800/20 to-black/20 py-32 text-center">
+      <ParticlesContainer />
       <div className="container mx-auto h-full flex flex-col justify-center">
         {/* Title */}
         <motion.h2
@@ -17,7 +19,7 @@ const Testimonials = () => {
           exit="hidden"
           className="h2 mb-8 xl:mb-0"
         >
-          What Colleagues & Clients <span className="text-accent">Say.</span>
+          What Colleagues <span className="text-accent">Say.</span>
         </motion.h2>
         {/* Testimonial Slider */}
         <motion.div

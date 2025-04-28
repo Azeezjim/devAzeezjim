@@ -6,10 +6,12 @@ import Circles from "../../components/Circles";
 // framer motion
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
+import ParticlesContainer from "../../components/ParticlesContainer";
 
 const Work = () => {
   return (
-    <div className="h-full bg-primary/30 py-36 flex items-center">
+    <div className="bg-primary h-full bg-gradient-to-r from-primary/10 via-blue-800/20 to-black/20 py-36 flex items-center">
+      <ParticlesContainer />
       <Circles />
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
@@ -31,9 +33,9 @@ const Work = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Explore my journey as a Full Stack Engineer. From intuitive web
-              designs to robust back-end solutions, each project tells a story
-              of skill and dedication.
+              Explore my expertise in Frontend and Mobile Development, where I craft intuitive interfaces with React.js, Next.js,
+              and React Native. From state management to performance optimization and secure payment systems, my work combines technical
+              precision with creative solutions and exceptional user experience.
             </motion.p>
           </div>
           {/* work slider */}

@@ -1,65 +1,75 @@
-// React Hook Form
-import React, { useRef, useState } from "react";
+"use client"
 
-// components
-import Circles from "/components/Circles";
-
-// icons
-import { BsArrowRight } from "react-icons/bs";
-
-// framer-motion
-import { motion } from "framer-motion";
-
-// variants
-import { fadeIn } from "../../variants";
-
-// emailjs
-import emailjs from "@emailjs/browser";
+import { useEffect, useRef, useState } from "react"
+import { motion } from "framer-motion"
+import emailjs from "@emailjs/browser"
+import { BsArrowRight } from "react-icons/bs"
+import Circles from "/components/Circles"
+import { fadeIn } from "../../variants"
+import Bulb from "../../components/Bulb"
 
 const Contact = () => {
-  // form ref
-  const form = useRef();
+  const form = useRef()
+  const [status, setStatus] = useState({ 
+    success: null, 
+    message: "",
+    details: ""
+  })
+  const [isLoading, setIsLoading] = useState(false)
 
-  //  env variables
-  const SERVICE_ID = process.env.NEXT_PUBLIC_SERVICE_ID;
-  const TEMPLATE_ID = process.env.NEXT_PUBLIC_TEMPLATE_ID;
-  const PUBLIC_KEY = process.env.NEXT_PUBLIC_PUBLIC_KEY;
+  // Debugging useEffect
+  useEffect(() => {
+    console.log("EmailJS Configuration:", {
+      publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
+      serviceID: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+      templateID: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID
+    })
+  }, [])
 
-  // alert state
-  const [successMessage, setSuccessMessage] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
-  // send email
-  const sendEmail = (e) => {
-    e.preventDefault();
+  const sendEmail = async (e) => {
+    e.preventDefault()
+    setIsLoading(true)
+    setStatus({ success: null, message: "", details: "" })
 
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
-      (result) => {
-        console.log(result.text);
-        setSuccessMessage(
-          "Message sent successfully, I'll get back to you soon!"
-        );
-      },
-      (error) => {
-        console.log(error.text);
-        setErrorMessage("Something went wrong, please try again!");
+    try {
+      // Explicit initialization with error handling
+      await emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY)
+      
+      const result = await emailjs.sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        form.current
+      )
+
+      if(result.status === 200) {
+        setStatus({
+          success: true,
+          message: "Message sent successfully! 🎉",
+          details: `EmailJS Status: ${result.status}`
+        })
+        form.current.reset()
       }
-    );
-    e.target.reset(
+    } catch (error) {
+      console.error("Full Error Object:", error)
+      setStatus({
+        success: false,
+        message: "Failed to send message ❌",
+        details: error.text || error.message
+      })
+    } finally {
+      setIsLoading(false)
       setTimeout(() => {
-        setSuccessMessage("");
-        setErrorMessage("");
+        setStatus({ success: null, message: "", details: "" })
       }, 5000)
-    );
-  };
+    }
+  }
 
   return (
-    <div className="h-full bg-primary/30">
-      {/* circles */}
+    <div className="bg-primary h-full bg-gradient-to-r from-primary/10 via-blue-800/20 to-black/20">
       <Circles />
-      <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
-        {/* text & form */}
+      <Bulb />
+      <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full relative z-20">
         <div className="flex flex-col w-full max-w-[700px]">
-          {/* text */}
           <motion.h2
             variants={fadeIn("up", 0.2)}
             initial="hidden"
@@ -69,7 +79,7 @@ const Contact = () => {
           >
             Let&apos;s <span className="text-accent">Connect.</span>
           </motion.h2>
-          {/* form */}
+
           <motion.form
             variants={fadeIn("up", 0.4)}
             initial="hidden"
@@ -79,57 +89,72 @@ const Contact = () => {
             ref={form}
             onSubmit={sendEmail}
           >
-            {/* input group */}
             <div className="flex gap-x-6 w-full">
-              <input
-                type="text"
-                placeholder="Name"
-                name="name"
-                className="input"
-                required
+              <input 
+                type="text" 
+                placeholder="Name" 
+                name="user_name" 
+                className="input" 
+                required 
+                minLength="3"
               />
-              <input
-                type="email"
-                placeholder="Email"
-                name="email"
-                className="input"
+              <input 
+                type="email" 
+                placeholder="Email" 
+                name="user_email" 
+                className="input" 
                 required
               />
             </div>
-            {/* textarea */}
-            <input
-              type="text"
-              placeholder="Subject"
-              name="subject"
-              className="input"
-              required
+
+            <input 
+              type="text" 
+              placeholder="Subject" 
+              name="subject" 
+              className="input" 
+              required 
+              minLength="5"
             />
-            {/* textarea */}
-            <textarea
-              placeholder="message"
-              name="message"
-              className="textarea"
-              required
+
+            <textarea 
+              placeholder="Message" 
+              name="message" 
+              className="textarea" 
+              required 
+              rows="5"
+              minLength="10"
             ></textarea>
-            {/* Alert */}
-            <div className="flex items-center justify-center gap-2">
-              <p>{successMessage ? successMessage : errorMessage}</p>
+
+            <div className="min-h-[40px]">
+              {status.message && (
+                <div className={`text-sm ${status.success ? 'text-green-500' : 'text-red-500'}`}>
+                  <p>{status.message}</p>
+                  <p className="text-xs opacity-75">{status.details}</p>
+                </div>
+              )}
             </div>
-            {/* button */}
+
             <button
               type="submit"
-              className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
+              disabled={isLoading}
+              className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
-                Let&apos;s Talk
-              </span>
-              <BsArrowRight className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]" />
+              {isLoading ? (
+                <span className="animate-pulse">Sending...</span>
+              ) : (
+                <>
+                  <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
+                    Let&apos;s Talk
+                  </span>
+                  <BsArrowRight className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]" />
+                </>
+              )}
             </button>
           </motion.form>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact

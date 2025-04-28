@@ -2,18 +2,17 @@
 import { RxArrowTopRight } from 'react-icons/rx';
 
 import {
-  SiAnsible,
-  SiReactos,
   SiNextdotjs,
-  SiFirebase,
-  SiGooglecloud,
   SiGithub,
+  SiRedux,
+  SiReact,
+  SiFastapi,
 } from 'react-icons/si';
+import { IoLogoFigma } from "react-icons/io5";
+import { FaCode, FaHandshake, FaRegComments } from "react-icons/fa";
+import { MdSpeed, MdSecurity } from "react-icons/md";
 
-// import required modules
 import { FreeMode, Pagination } from 'swiper';
-
-// import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // import Swiper styles
@@ -24,37 +23,51 @@ import 'swiper/css/pagination';
 // data
 const serviceData = [
   {
-    icon: <SiGithub />,
-    title: 'Github',
-    description: "View my Github profile and see what I'm working on!",
-    url: 'https://github.com/immain',
-  },
-  {
-    icon: <SiReactos />,
-    title: 'Mobile UI/UX',
-    description: "I've been designing and developing for the web since 2019.",
-  },
-  {
-    icon: <SiAnsible />,
-    title: 'Automation',
-    description: 'Automated Game Servers, Discord Bots, and more!',
-  },
-  {
     icon: <SiNextdotjs />,
-    title: 'Development',
-    description: 'Used React, NextJS, and TailwindCSS to build this site!',
+    title: 'Web Development',
+    description: 'Crafting exceptional digital experiences with React, Next.js, and Tailwind CSS, transforming complex requirements into elegant, responsive web solutions with optimal performance.'
+    },
+  {
+    icon: <SiGithub />,
+    title: 'Git/Github',
+    description: 'Mastering collaborative development through GitHub with expert command of Git workflows, ensuring seamless version control and efficient team collaboration on all projects.',
+    url: 'https://github.com/Azeezjim',
   },
   {
-    icon: <SiFirebase />,
-    title: 'Cyber Security',
-    description: 'Risk Management, Penetration Testing, and Audits.',
+    icon: <SiReact />,
+    title: 'Mobile Development',
+    description: 'Creating cross-platform mobile experiences with React Native and Expo that deliver native performance while maintaining code efficiency.'
   },
   {
-    icon: <SiGooglecloud />,
-    title: 'Cloud Computing',
-    description:
-      'Focus on AWS, but also have experience with Azure and Linode.',
+    icon: <IoLogoFigma />,
+    title: 'UI/UX Design',
+    description: "Translating vision into reality with meticulous attention to pixel-perfect implementation, ensuring designs maintain their integrity while delivering seamless user experiences.",
   },
+  {
+    icon: <MdSpeed />,
+    title: 'Performance Optimization',
+    description: 'Enhancing application speed and responsiveness through advanced techniques that reduce load times and improve user satisfaction.'
+  },
+  {
+    icon: <SiFastapi />,
+    title: 'API Integration',
+    description: 'Seamlessly connecting frontend interfaces with backend services through RESTful APIs, ensuring reliable data exchange and system functionality.'
+  },
+  {
+    icon: <SiRedux />,
+    title: 'State Management',
+    description: 'Implementing sophisticated state management solutions using Redux, Zustand, and React Query for seamless data flow and optimal performance.'
+  },
+  {
+    icon: <FaCode />,
+    title: 'Form Handling',
+    description: 'Mastering complex form implementations with React Hook Form, Formik, and Zod validation for intuitive, error-resistant user interactions.'
+  },
+  {
+    icon: <MdSecurity />,
+    title: 'Secure Authentication',
+    description: 'Implementing robust authentication systems with Clerk and custom solutions to protect user data and ensure application security.'
+  }
 ];
 
 const ServiceSlider = () => {
@@ -93,12 +106,12 @@ const ServiceSlider = () => {
               {/* title & description */}
               <div className='mb-8'>
                 <div className='mb-2 text-lg'>{item.title}</div>
-                <p className='max-w-[350px] leading-normal'>
+                <p className='max-w-[400px] leading-normal text-[13px]'>
                   {item.description}
                 </p>
               </div>
               {/* arrow */}
-              <div className='text-3xl'>
+              <div className='text-3xl '>
                 <RxArrowTopRight className='group-hover:rotate-45 group-hover:text-accent transition-all duration-300' />
               </div>
             </div>

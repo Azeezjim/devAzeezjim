@@ -4,24 +4,34 @@ const workSlides = {
     {
       images: [
         {
-          title: 'Hive Social',
-          path: '/hive2.png',
-          url: 'https://hive-social-app.vercel.app/',
+          title: 'HuBuk',
+          path: '/Images/hubuk.png',
+          url: 'https://hubuktechnology.com/',
         },
         {
-          title: 'Pandas Hangout',
-          path: '/hangout.png',
-          url: 'https://pandashangout.com/',
+          title: 'SQE.io',
+          path: '/Images/sqe.png',
+          url: 'https://sqe.io/',
         },
         {
-          title: 'Together Forward',
-          path: '/together.png',
-          url: 'https://togetherforwarddoula.com/',
+          title: 'Eulav',
+          path: '/Images/eulav.png',
+          url: 'https://eulav.io/',
         },
         {
-          title: 'American Ambulance',
-          path: '/aavems.png',
-          url: 'https://aavems.com/',
+          title: 'MeHub',
+          path: '/Images/mehub.png',
+          url: '',
+        },
+        {
+          title: 'Give Aid',
+          path: '/Images/giveaid.png',
+          url: 'https://give-aid-fe.vercel.app/',
+        },
+        {
+          title: 'Starloan',
+          path: '/Images/starloan.png',
+          url: '',
         },
       ],
     },
@@ -57,8 +67,8 @@ const WorkSlider = () => {
     >
       {workSlides.slides.map((slide, index) => {
         return (
-          <SwiperSlide key={index}>
-            <div className='grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer'>
+          <SwiperSlide key={index} className='mb-6 overflow-y-auto max-h-[500px] scrollbar-thin'>
+            <div className='grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer '>
               {slide.images.map((image, index) => {
                 return (
                   <div
@@ -69,10 +79,13 @@ const WorkSlider = () => {
                       {/* image */}
                       <Image
                         src={image.path}
+                        alt={image.title}
                         width={500}
                         height={300}
-                        alt='Image'
+                        className="object-cover transform group-hover:scale-105 transition-transform duration-300"
+                      // sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       />
+                      
                       {/* Click Overlay */}
                       <a
                         href={image.url}

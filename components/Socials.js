@@ -11,13 +11,13 @@ import {
 
 import { HiDocumentText } from "react-icons/hi2";
 
-import { SiCodecademy } from "react-icons/si";
+import { SiCodecademy, SiHashnode } from "react-icons/si";
 
 const Socials = () => {
   return (
     <div className="flex items-center gap-x-5 text-2xl">
       <Link
-        href="https://www.linkedin.com/in/immain/"
+        href="https://www.linkedin.com/in/garuba-abdul-azeez-713273167"
         rel="noopener noreferrer"
         target="_blank"
         className="hover:text-accent transition-all duration-300"
@@ -25,7 +25,7 @@ const Socials = () => {
         <RiLinkedinBoxFill />
       </Link>
       <Link
-        href="https://github.com/Immain"
+        href="https://github.com/Azeezjim"
         rel="noopener noreferrer"
         target="_blank"
         className="hover:text-accent transition-all duration-300"
@@ -33,7 +33,15 @@ const Socials = () => {
         <RiGithubFill />
       </Link>
       <Link
-        href="https://codepen.io/Immain"
+        href="https://hashnode.com/@Azeezjim"
+        rel="noopener noreferrer"
+        target="_blank"
+        className="hover:text-accent transition-all duration-300"
+      >
+        <SiHashnode />
+      </Link>
+      <Link
+        href="https://codepen.io/SirAzeeJim"
         rel="noopener noreferrer"
         target="_blank"
         className="hover:text-accent transition-all duration-300"
@@ -41,18 +49,10 @@ const Socials = () => {
         <RiCodepenFill />
       </Link>
       <Link
-        href="https://www.codecademy.com/profiles/immain"
-        rel="noopener noreferrer"
-        target="_blank"
-        className="hover:text-accent transition-all duration-300"
-      >
-        <SiCodecademy />
-      </Link>
-      <Link
         href=""
         onClick={(e) => {
           window.open(
-            "https://drive.google.com/file/d/1gae8jmqaSvITD54QwBWh9aFm6vdEU3DN/view?usp=sharing",
+            "https://drive.google.com/file/d/1LRo6jZ484ugdNC7KWzszDa-1bIcDNd_G/view?usp=drive_link",
             "_blank"
           );
         }}
