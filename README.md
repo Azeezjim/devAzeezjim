@@ -1,4 +1,4 @@
-# IanMain.Dev
+# Garuba Abdulazeez
 
 Welcome to my personal portfolio website repository! This project showcases my journey in the world of web development and design. Feel free to explore the various sections to learn more about me and my work.
 
@@ -54,5 +54,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-© 2023 IanMain.Dev | Built with ❤️
+© 2025 Garuba Abdulazeez | Built with ❤️
 
