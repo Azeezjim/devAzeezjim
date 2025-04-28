@@ -4,7 +4,7 @@ Welcome to my personal portfolio website repository! This project showcases my j
 
 ## About
 
-Ian is a results-driven Information Technology specialist with a decade of experience and strong background in providing technical expertise and support across diverse IT environments. Proficient in troubleshooting hardware and software issues, optimizing system performance, and ensuring seamless network operations. Skilled in implementing security measures, data backups, and disaster recovery plans to safeguard critical information. Collaborative communicator adept at assisting users, training staff, and liaising with cross-functional teams to deliver innovative IT solutions. Committed to staying abreast of emerging technologies and industry best practices to drive continuous improvement in IT infrastructure and operations.
+ Abdulazeez is a results-driven Information Technology specialist with a decade of experience and strong background in providing technical expertise and support across diverse IT environments. Proficient in troubleshooting hardware and software issues, optimizing system performance, and ensuring seamless network operations. Skilled in implementing security measures, data backups, and disaster recovery plans to safeguard critical information. Collaborative communicator adept at assisting users, training staff, and liaising with cross-functional teams to deliver innovative IT solutions. Committed to staying abreast of emerging technologies and industry best practices to drive continuous improvement in IT infrastructure and operations.
 
 ## Project Languages:
 <p align="left">
@@ -36,7 +36,7 @@ Discover the technologies and tools I'm proficient in. This section highlights m
 - CSS
 - JavaScript
 - React
-- Node.js
+- Next.js
 
 ## 🐛 Known Issues:
 
