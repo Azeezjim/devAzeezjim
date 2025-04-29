@@ -1,6 +1,6 @@
 {
   "extends": "next/core-web-vitals",
   "rules": {
-    "react/jsx-key": "disabled"
+    "react/jsx-key": "error"  // or "warn" or 0 to disable
   }
 }
