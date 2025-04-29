@@ -1,8 +1,9 @@
 "use client"
 
+
 import { useEffect, useRef, useState } from "react"
 import { motion } from "framer-motion"
-import emailjs from "@emailjs/browser"
+import emailjs from '@emailjs/browser';
 import { BsArrowRight } from "react-icons/bs"
 import Circles from "/components/Circles"
 import { fadeIn } from "../../variants"
