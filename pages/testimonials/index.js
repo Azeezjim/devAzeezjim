@@ -8,7 +8,7 @@ import ParticlesContainer from "../../components/ParticlesContainer";
 
 const Testimonials = () => {
   return (
-    <div className="bg-primary h-full bg-gradient-to-r from-primary/10 via-blue-800/20 to-black/20 py-32 text-center">
+    <div className="bg-primary h-full bg-gradient-to-r from-primary/10 via-blue-800/20 to-black/20 py-20 text-center">
       <ParticlesContainer />
       <div className="container mx-auto h-full flex flex-col justify-center">
         {/* Title */}

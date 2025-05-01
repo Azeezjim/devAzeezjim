@@ -1,0 +1,37 @@
+<svg width="270" height="34" viewBox="0 0 270 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- "dev" in teal -->
+  <text
+    x="0"
+    y="27"
+    font-family="Helvetica, Arial, sans-serif"
+    font-size="33"
+    font-weight="700"
+    fill="#00ADEF"
+  >
+    dev
+  </text>
+
+  <!-- "Azeezjim" in white -->
+  <text
+    x="55"
+    y="27"
+    font-family="Helvetica, Arial, sans-serif"
+    font-size="33"
+    font-weight="700"
+    fill="#FFFFFF"
+  >
+    Azeezjim
+  </text>
+
+  <!-- "();" in orange-red -->
+  <text
+    x="190"
+    y="27"
+    font-family="Helvetica, Arial, sans-serif"
+    font-size="33"
+    font-weight="700"
+    fill="#F13024"
+  >
+    ();
+  </text>
+</svg>

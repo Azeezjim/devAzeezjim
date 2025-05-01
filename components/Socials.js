@@ -15,7 +15,7 @@ import { SiCodecademy, SiHashnode } from "react-icons/si";
 
 const Socials = () => {
   return (
-    <div className="flex items-center gap-x-5 text-2xl">
+    <div className="flex items-center gap-x-3.5 md:gap-x-5 text-2xl">
       <Link
         href="https://www.linkedin.com/in/garuba-abdul-azeez-713273167"
         rel="noopener noreferrer"

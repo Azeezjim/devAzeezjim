@@ -29,7 +29,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="text-[20px] font-bold sml:text-[35px] md:text-[35px] mt-12"
+            className="text-[20px] font-bold md:text-[35px] mt-12 md:mt-8"
           >
             Transforming Ideas <br /> Into{" "}
             <span className="text-accent">Digital Reality</span>
@@ -40,19 +40,20 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-full px-2 xl:max-w-[900px] mx-auto xl:mx-0 mb-10 xl:mb-16 text-[12px] sml:text-[13.5px] md:text-[15px] text-white"
+            className="max-w-full px-2 xl:max-w-[900px] mx-auto xl:mx-0 mb-10 xl:mb-16 text-[11.5px] sml:text-[13.5px] md:text-[15px] text-white my-2"
           >
-            <strong className=" text-[12.5px] text-base/4 leading-2 sml:text-[14px] md:text-[15.5px] ">Hey👋, I&apos;m <b className=" font-bold">Garuba Abdulazeez!</b></strong>
-            <br />
-            <br />
-            A creative Front-end and Mobile Developer with a BSc in Computer Science and over 4 years of experience crafting user-centric solutions
-            . I specialize in React.js, Next.js, TypeScript, and React Native, building responsive applications that deliver exceptional experiences across platforms.<br />
-            My approach combines technical precision with innovative designan ayzing problems, collaborating with teams, and implementing robust solutions. From leading development
-            at Mainstream Exelient to engineering secure applications at SQE Holdings, I've consistently improved performance metrics while enhancing user engagement by 20-35%.<br />
-            Currently expanding toward cross-platform and full-stack development, I'm learning backend technologies while also exploring web design through WordPress. This versatile
-            skill set allows me to create comprehensive digital experiences from concept to deployment. I'm passionate about bringing my technical expertise and collaborative spirit
-            to forward-thinking teams.
+            <strong className="text-[11.5px] sml:text-[14px] md:text-[14.5px]">
+              Hey👋, I&apos;m <b className="font-bold">Garuba Abdulazeez</b> 
+            </strong>
+            a Frontend and Mobile Engineer with a Bachelor&apos;s degree in Computer Science and over 4 years of hands-on experience turning complex ideas into polished, high-impact digital products.
+            <br /><br />
+            I bring deep expertise in React.js, Next.js, TypeScript, and React Native  building cross-platform experiences that are fast, accessible, and scalable. From shipping secure fintech apps and multi-currency wallets to leading development teams and mentoring engineers, I’ve consistently delivered results that improve performance, drive engagement, and meet real business goals.
+            <br /><br />
+            My technical foundation is backed by academic training in software engineering principles, algorithms, and system architecture, giving me a holistic view of product development  from frontend finesse to backend logic. I thrive in collaborative environments where ideas are challenged, problems are solved elegantly, and technology is used to make real impact.
+            <br /><br />
+            Whether you need a performance-obsessed engineer, a design-conscious builder, or a teammate who owns delivery from concept to deployment I’m ready to contribute, grow, and build great things.
           </motion.p>
+
           {/*Button*/}
           <div className="flex justify-center xl:hidden relative">
             <ProjectsBtn />
@@ -68,7 +69,7 @@ const Home = () => {
           </motion.div>
         </div>
       </div>
-      
+
     </div>
   );
 };
