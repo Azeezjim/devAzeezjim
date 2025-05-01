@@ -1,25 +1,20 @@
-"use client"
+'use client'
 
-import { useEffect, useRef, useState } from "react"
-import { motion } from "framer-motion"
-import emailjs from '@emailjs/browser';
-import { BsArrowRight } from "react-icons/bs"
-import Circles from "/components/Circles"
-import { fadeIn } from "../../variants"
-import Bulb from "../../components/Bulb"
+import { useEffect, useRef, useState } from 'react'
+import { motion } from 'framer-motion'
+import emailjs from '@emailjs/browser'
+import { BsArrowRight } from 'react-icons/bs'
+import { toast } from 'sonner'
+import Circles from '/components/Circles'
+import { fadeIn } from '../../variants'
+import Bulb from '../../components/Bulb'
 
 const Contact = () => {
   const form = useRef()
-  const [status, setStatus] = useState({ 
-    success: null, 
-    message: "",
-    details: ""
-  })
   const [isLoading, setIsLoading] = useState(false)
 
-  // Debugging useEffect
   useEffect(() => {
-    console.log("EmailJS Configuration:", {
+    console.log('EmailJS Configuration:', {
       publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
       serviceID: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
       templateID: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID
@@ -29,38 +24,25 @@ const Contact = () => {
   const sendEmail = async (e) => {
     e.preventDefault()
     setIsLoading(true)
-    setStatus({ success: null, message: "", details: "" })
 
     try {
-      // Explicit initialization with error handling
       await emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY)
-      
+
       const result = await emailjs.sendForm(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
         form.current
       )
 
-      if(result.status === 200) {
-        setStatus({
-          success: true,
-          message: "Message sent successfully! 🎉",
-          details: `EmailJS Status: ${result.status}`
-        })
+      if (result.status === 200) {
+        toast.success("Your message has been delivered successfully. I'll get back to you shortly!")
         form.current.reset()
       }
     } catch (error) {
-      console.error("Full Error Object:", error)
-      setStatus({
-        success: false,
-        message: "Failed to send message ❌",
-        details: error.text || error.message
-      })
+      console.error('Error:', error)
+      toast.error('Failed to send message. Please try again later.')
     } finally {
       setIsLoading(false)
-      setTimeout(() => {
-        setStatus({ success: null, message: "", details: "" })
-      }, 5000)
     }
   }
 
@@ -71,7 +53,7 @@ const Contact = () => {
       <div className="container mx-auto py-20 text-center xl:text-left flex items-center justify-center h-full relative z-20">
         <div className="flex flex-col w-full max-w-[700px]">
           <motion.h2
-            variants={fadeIn("up", 0.2)}
+            variants={fadeIn('up', 0.2)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -81,7 +63,7 @@ const Contact = () => {
           </motion.h2>
 
           <motion.form
-            variants={fadeIn("up", 0.4)}
+            variants={fadeIn('up', 0.4)}
             initial="hidden"
             animate="show"
             exit="hidden"
@@ -90,49 +72,40 @@ const Contact = () => {
             onSubmit={sendEmail}
           >
             <div className="flex gap-x-6 w-full">
-              <input 
-                type="text" 
-                placeholder="Name" 
-                name="user_name" 
-                className="input" 
-                required 
+              <input
+                type="text"
+                placeholder="Name"
+                name="user_name"
+                className="input"
+                required
                 minLength="3"
               />
-              <input 
-                type="email" 
-                placeholder="Email" 
-                name="user_email" 
-                className="input" 
+              <input
+                type="email"
+                placeholder="Email"
+                name="user_email"
+                className="input"
                 required
               />
             </div>
 
-            <input 
-              type="text" 
-              placeholder="Subject" 
-              name="subject" 
-              className="input" 
-              required 
+            <input
+              type="text"
+              placeholder="Subject"
+              name="subject"
+              className="input"
+              required
               minLength="5"
             />
 
-            <textarea 
-              placeholder="Message" 
-              name="message" 
-              className="textarea" 
-              required 
+            <textarea
+              placeholder="Message"
+              name="message"
+              className="textarea"
+              required
               rows="5"
               minLength="10"
             ></textarea>
-
-            <div className="min-h-[40px]">
-              {status.message && (
-                <div className={`text-sm ${status.success ? 'text-green-500' : 'text-red-500'}`}>
-                  <p>{status.message}</p>
-                  <p className="text-xs opacity-75">{status.details}</p>
-                </div>
-              )}
-            </div>
 
             <button
               type="submit"

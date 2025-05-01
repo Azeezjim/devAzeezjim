@@ -10,7 +10,7 @@ import ParticlesContainer from "../../components/ParticlesContainer";
 
 const Work = () => {
   return (
-    <div className="bg-primary h-full bg-gradient-to-r from-primary/10 via-blue-800/20 to-black/20 py-20 flex items-center">
+    <div className="bg-primary h-full bg-gradient-to-r from-primary/10 via-blue-800/20 to-black/20 py-20  flex items-center">
       <ParticlesContainer />
       <Circles />
       <div className="container mx-auto">

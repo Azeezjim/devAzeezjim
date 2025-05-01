@@ -255,7 +255,7 @@ const About = () => {
             variants={fadeIn("right", 0.2)}
             initial="hidden"
             animate="show"
-            className="text-[18px] md:text-[35px] font-bold  text-white">
+            className="text-[18px] md:text-[05px] font-bold  text-white">
             Captivating <span className="text-accent">stories</span> birth magnificent designs.
           </motion.h2>
           <motion.div

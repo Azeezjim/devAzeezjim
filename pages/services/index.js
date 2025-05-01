@@ -9,7 +9,7 @@ import ParticlesContainer from '../../components/ParticlesContainer';
 
 const Services = () => {
   return (
-    <div className='bg-primary h-full bg-gradient-to-r from-primary/10 via-blue-800/20 to-black/20 py-20 flex items-center'>
+    <div className='bg-primary h-full bg-gradient-to-r from-primary/10 via-blue-800/20 to-black/20 py-8 flex items-center'>
       <ParticlesContainer />
       <Circles />
       <div className='container mx-auto'>
@@ -30,7 +30,7 @@ const Services = () => {
               initial='hidden'
               animate='show'
               exit='hidden'
-              className='mb-4 max-w-[400px] mx-auto lg:mx-0 text-white text-[12px] sl:text-[12.5px] md:text-[14px] lg:text-[15px] xl:text-[18px] leading-6'
+              className='mb-4 max-w-[400px] mx-auto lg:mx-0 text-white text-[11.5px] md:text-[14px] lg:text-[15px] xl:text-[18px] leading-6'
             >
               I transform digital visions into reality through expert development services that blend
               technical precision with creative flair. Whether collaborating with teams or taking on

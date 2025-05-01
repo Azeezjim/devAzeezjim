@@ -29,7 +29,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="text-[20px] font-bold md:text-[35px] mt-12 md:mt-8"
+            className="text-[20px] font-bold md:text-[35px] mt-12 md:mt-20"
           >
             Transforming Ideas <br /> Into{" "}
             <span className="text-accent">Digital Reality</span>
@@ -40,12 +40,12 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-full px-2 xl:max-w-[900px] mx-auto xl:mx-0 mb-10 xl:mb-16 text-[11.5px] sml:text-[13.5px] md:text-[15px] text-white my-2"
+            className="max-w-full px-2 xl:max-w-[950px] mx-auto xl:mx-0 mb-10 xl:mb-16 text-[11.5px] sml:text-[13.5px] md:text-[14px] text-white my-2"
           >
-            <strong className="text-[11.5px] sml:text-[14px] md:text-[14.5px]">
+            <strong className="text-[11.5px] sml:text-[14px] md:text-[14px]">
               Hey👋, I&apos;m <b className="font-bold">Garuba Abdulazeez</b> 
             </strong>
-            a Frontend and Mobile Engineer with a Bachelor&apos;s degree in Computer Science and over 4 years of hands-on experience turning complex ideas into polished, high-impact digital products.
+            {" "}a Frontend and Mobile Engineer with a Bachelor&apos;s degree in Computer Science and over 4 years of hands-on experience turning complex ideas into polished, high-impact digital products.
             <br /><br />
             I bring deep expertise in React.js, Next.js, TypeScript, and React Native  building cross-platform experiences that are fast, accessible, and scalable. From shipping secure fintech apps and multi-currency wallets to leading development teams and mentoring engineers, I’ve consistently delivered results that improve performance, drive engagement, and meet real business goals.
             <br /><br />
