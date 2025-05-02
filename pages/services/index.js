@@ -21,7 +21,7 @@ const Services = () => {
               initial='hidden'
               animate='show'
               exit='hidden'
-              className='h2 xl:mt-2'
+              className='text-[25px] font-bold md:text-[35px] h2 xl:mt-2'
             >
               My Services<span className='text-accent'>.</span>
             </motion.h2>
@@ -30,7 +30,7 @@ const Services = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="mb-4 max-w-[400px] mx-auto lg:mx-0 text-[14px] md:text-[16px] leading-relaxed"
+              className="mb-4 max-w-[400px] mx-auto lg:mx-0 text-[12px] md:text-[14.5px] leading-relaxed"
             >
               Armed with a BSc in Computer Science and over four years of hands-on experience, I specialize in crafting seamless, high-performance applications using React.js, Next.js, and React Native. From architecting robust state management to fine-tuning load-time performance and integrating secure payment workflows, my work delivers both technical excellence and engaging user experiences. Let&apos;s build the next generation of intuitive, scalable digital products together.
             </motion.p>

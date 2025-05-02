@@ -10,14 +10,14 @@ const Testimonials = () => {
   return (
     <div className="bg-primary h-full bg-gradient-to-r from-primary/10 via-blue-800/20 to-black/20 py-20 text-center">
       <ParticlesContainer />
-      <div className="container mx-auto h-full flex flex-col justify-center">
+      <div className="container mx-auto h-full flex flex-col justify-center mt-[-40px] md:mt-12">
         {/* Title */}
         <motion.h2
           variants={fadeIn("up", 0.2)}
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="h2 mb-8 xl:mb-0"
+          className="text-[25px] font-bold md:text-[35px] h2 mb-8 xl:mb-0"
         >
           What Colleagues <span className="text-accent">Say.</span>
         </motion.h2>

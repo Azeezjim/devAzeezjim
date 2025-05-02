@@ -29,7 +29,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="text-[20px] font-bold md:text-[35px] md:mt-20 mt-28"
+            className="text-[20px] font-bold md:text-[35px] md:mt-20 mt-32"
           >
             Transforming Ideas <br /> Into{" "}
             <span className="text-accent">Digital Reality</span>

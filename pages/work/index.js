@@ -31,7 +31,7 @@ const Work = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="mb-4 max-w-[400px] mx-auto lg:mx-0"
+              className="mb-4 max-w-[400px] mx-auto lg:mx-0 text-[12px] md:text-[13.5px]"
             >
               Explore my expertise in Frontend and Mobile Development, where I craft intuitive interfaces with React.js, Next.js,
               and React Native. From state management to performance optimization and secure payment systems, my work combines technical

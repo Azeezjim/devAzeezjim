@@ -13,14 +13,6 @@ const Contact = () => {
   const form = useRef()
   const [isLoading, setIsLoading] = useState(false)
 
-  useEffect(() => {
-    console.log('EmailJS Configuration:', {
-      publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
-      serviceID: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-      templateID: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID
-    })
-  }, [])
-
   const sendEmail = async (e) => {
     e.preventDefault()
     setIsLoading(true)
@@ -39,7 +31,6 @@ const Contact = () => {
         form.current.reset()
       }
     } catch (error) {
-      console.error('Error:', error)
       toast.error('Failed to send message. Please try again later.')
     } finally {
       setIsLoading(false)
@@ -50,8 +41,8 @@ const Contact = () => {
     <div className="bg-primary h-full bg-gradient-to-r from-primary/10 via-blue-800/20 to-black/20">
       <Circles />
       <Bulb />
-      <div className="container mx-auto py-0 md:py-20 text-center xl:text-left flex items-center justify-center h-full relative z-20">
-        <div className="flex flex-col w-full max-w-[700px]">
+      <div className="container mx-auto mt-[-55px] md:mt-0 md:py-20 text-center xl:text-left flex items-center justify-center h-full relative z-20">
+        <div className="flex flex-col w-full max-w-[700px] ">
           <motion.h2
             variants={fadeIn('up', 0.2)}
             initial="hidden"
@@ -110,7 +101,7 @@ const Contact = () => {
             <button
               type="submit"
               disabled={isLoading}
-              className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group disabled:opacity-50 disabled:cursor-not-allowed"
+              className="btn rounded-lg border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isLoading ? (
                 <span className="animate-pulse">Sending...</span>

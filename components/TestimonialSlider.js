@@ -1,7 +1,7 @@
 // testimonial data
 const testimonialData = [
   {
-    image: '/public/Images/Austin.jpg',
+    image: '/Images/Austin.jpg',
     name: 'Austin Arrington',
     position: 'Founder Plant Group',
     message:
@@ -113,7 +113,7 @@ const TestimonialSlider = () => {
                   <FaQuoteLeft className='text-4xl xl:text-6xl text-white/20 mx-auto md:mx-0' />
                 </div>
                 {/* Message */}
-                <div className='text-[12px] xl:text-[15px] text-center md:text-left'>
+                <div className='md:text-[13px] text-[11.5px] xl:text-[15px] text-center md:text-left'>
                   {person.message}
                 </div>
               </div>

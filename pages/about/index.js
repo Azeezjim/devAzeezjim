@@ -240,15 +240,15 @@ const About = () => {
       <ParticlesContainer />
       <Bulb />
 
-      <motion.div
+      {/* <motion.div
         variants={fadeIn("right", 0.2)}
         initial="hidden"
         animate="show"
         className="hidden xl:flex absolute bottom-0 -left-[270px] opacity-70 hover:opacity-100 transition-opacity duration-300 ">
         <Avatar />
-      </motion.div>
+      </motion.div> */}
 
-      <div className="container mx-auto h-full flex flex-col xl:flex-row gap-x-6 mt-8">
+      <div className="container mx-auto h-full flex flex-col xl:flex-row gap-x-6 mt-12">
         {/* Left Column */}
         <div className="flex-1 flex flex-col xl:max-w-[55%]">
           <motion.h2
@@ -262,7 +262,7 @@ const About = () => {
             variants={fadeIn("right", 0.4)}
             initial="hidden"
             animate="show"
-            className="mt-5 md:mt-4 max-h-[200px] md:max-h-[270px]  overflow-y-auto px-4 rounded-xl fancy-scroll touch-pan-y overscroll-contain"
+            className="mt-5 md:mt-4 max-h-[185px] md:max-h-[320px]  overflow-y-auto px-4 rounded-xl fancy-scroll touch-pan-y overscroll-contain"
             ref={scrollRef}
           >
             <div className="text-sm text-white/80 text-left leading-relaxed">

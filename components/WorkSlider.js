@@ -25,7 +25,7 @@ const workSlides = {
         },
         {
           title: 'Give Aid',
-          path: '/Images/giveaid.png',
+          path: '/Images/givaid.png',
           url: 'https://give-aid-fe.vercel.app/',
         },
         {
