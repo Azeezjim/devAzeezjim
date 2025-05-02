@@ -19,7 +19,7 @@ const testimonialData = [
   {
     image: '/Images/Isah.jpg',
     name: 'Isah Abba Ibrahim',
-    position: 'Software Engineer at Snaphunt',
+    position: 'Software Engineer Snaphunt',
     message:
       "Working alongside Abdulazeez at Hubuk and studying with him at the University of Jos has been truly inspiring. His remarkable programming skills, especially in web development, set him apart as a rare talent. Abdulazeez combines academic brilliance with a relentless drive for excellence, making him an extraordinary asset to any team. His unwavering dedication, sharp intellect, and passion for innovation are nothing short of exceptional. I wholeheartedly recommend him for any endeavor that demands greatness.",
     nkedin: 'https://www.linkedin.com/in/isah-ibrahim?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
@@ -27,7 +27,7 @@ const testimonialData = [
   {
     image: '/Images/Khail.jpg',
     name: 'Ibrahim Hamman',
-    position: 'Graduate Trainee at NMPC',
+    position: 'Graduate Trainee NMPC',
     message:
       'At Eulav, Abdulazeez consistently impressed me with his exceptional problem-solving abilities and unwavering commitment to excellence. He tackles challenges and bugs with remarkable precision and creativity, always pushing for the best solution. Beyond his technical brilliance, his positivity, approachability, and team spirit make him a true driving force within any team. Abdulazeez is a standout professional destined for greatness.',
     nkedin: 'https://www.linkedin.com/in/ibrahim-hamman-23732125a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
