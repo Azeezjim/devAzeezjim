@@ -16,6 +16,18 @@ import { SiCodecademy, SiHashnode } from "react-icons/si";
 const Socials = () => {
   return (
     <div className="flex items-center gap-x-3.5 md:gap-x-5 text-2xl">
+        <Link
+        href=""
+        onClick={(e) => {
+          window.open(
+            "https://drive.google.com/file/d/1hVEh-eCMq7ECHMljo0_ldvNRX1vPDTNk/view?usp=drivesdk",
+            "_blank"
+          );
+        }}
+        className="hover:text-accent transition-all duration-300"
+      >
+        <HiDocumentText />
+      </Link>
       <Link
         href="https://www.linkedin.com/in/garuba-abdul-azeez-713273167"
         rel="noopener noreferrer"
@@ -48,18 +60,7 @@ const Socials = () => {
       >
         <RiCodepenFill />
       </Link>
-      <Link
-        href=""
-        onClick={(e) => {
-          window.open(
-            "https://drive.google.com/file/d/1hVEh-eCMq7ECHMljo0_ldvNRX1vPDTNk/view?usp=drivesdk",
-            "_blank"
-          );
-        }}
-        className="hover:text-accent transition-all duration-300"
-      >
-        <HiDocumentText />
-      </Link>
+    
     </div>
   );
 };
