@@ -30,7 +30,7 @@ const workSlides = {
         },
         {
           title: 'Starloan',
-          path: '/Images/starloan.png',
+          path: '/Images/sterlon.png',
           url: '',
         },
       ],

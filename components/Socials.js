@@ -52,7 +52,7 @@ const Socials = () => {
         href=""
         onClick={(e) => {
           window.open(
-            "https://drive.google.com/file/d/1LRo6jZ484ugdNC7KWzszDa-1bIcDNd_G/view?usp=drive_link",
+            "https://drive.google.com/file/d/1hVEh-eCMq7ECHMljo0_ldvNRX1vPDTNk/view?usp=drivesdk",
             "_blank"
           );
         }}

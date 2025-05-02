@@ -26,17 +26,15 @@ const Services = () => {
               My Services<span className='text-accent'>.</span>
             </motion.h2>
             <motion.p
-              variants={fadeIn('up', 0.4)}
-              initial='hidden'
-              animate='show'
-              exit='hidden'
-              className='mb-4 max-w-[400px] mx-auto lg:mx-0 text-white text-[11.5px] md:text-[14px] lg:text-[15px] xl:text-[18px] leading-6'
+              variants={fadeIn("up", 0.4)}
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+              className="mb-4 max-w-[400px] mx-auto lg:mx-0 text-[14px] md:text-[16px] leading-relaxed"
             >
-              I transform digital visions into reality through expert development services that blend
-              technical precision with creative flair. Whether collaborating with teams or taking on
-              contracts, I deliver exceptional results that drive business value. My approach combines innovative
-              problem-solving with meticulous execution, ensuring projects meet the highest standards.
+              Armed with a BSc in Computer Science and over four years of hands-on experience, I specialize in crafting seamless, high-performance applications using React.js, Next.js, and React Native. From architecting robust state management to fine-tuning load-time performance and integrating secure payment workflows, my work delivers both technical excellence and engaging user experiences. Let&apos;s build the next generation of intuitive, scalable digital products together.
             </motion.p>
+
           </div>
           {/* service slider */}
           <motion.div
