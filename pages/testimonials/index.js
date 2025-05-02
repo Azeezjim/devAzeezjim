@@ -10,7 +10,7 @@ const Testimonials = () => {
   return (
     <div className="bg-primary h-full bg-gradient-to-r from-primary/10 via-blue-800/20 to-black/20 py-20 text-center">
       <ParticlesContainer />
-      <div className="container mx-auto h-full flex flex-col justify-center mt-[-40px] md:mt-12">
+      <div className="container mx-auto h-full flex flex-col justify-center mt-[-40px] md:mt-0">
         {/* Title */}
         <motion.h2
           variants={fadeIn("up", 0.2)}
