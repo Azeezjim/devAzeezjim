@@ -50,7 +50,7 @@ const Contact = () => {
     <div className="bg-primary h-full bg-gradient-to-r from-primary/10 via-blue-800/20 to-black/20">
       <Circles />
       <Bulb />
-      <div className="container mx-auto py-20 text-center xl:text-left flex items-center justify-center h-full relative z-20">
+      <div className="container mx-auto py-0 md:py-20 text-center xl:text-left flex items-center justify-center h-full relative z-20">
         <div className="flex flex-col w-full max-w-[700px]">
           <motion.h2
             variants={fadeIn('up', 0.2)}

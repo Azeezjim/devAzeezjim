@@ -9,9 +9,9 @@ import Socials from "../components/Socials";
 
 const Header = () => {
   return (
-    <header className="absolute z-30 w-full flex items-center px-4 md:px-16 xl:px-0  xl:h-[90px]">
+    <header className="absolute z-30 w-full flex items-center px-4 md:px-16 xl:px-0 xl:h-[90px]">
       <div className="container mx-auto">
-        <div className="flex flex-row lg:flex-row justify-between items-center gap-y-6 py-3">
+        <div className="flex flex-row lg:flex-row justify-between items-center py-2 md:py-3">
           {/* Logo */}
           <Link href="/" >
             <Image
@@ -20,6 +20,7 @@ const Header = () => {
               height={80}
               alt="logo"
               priority={true}
+              className=" md:w-[170px] md:h-[120px] h-[80px] w-[120px] "
             />
           </Link>
           {/* Socials */}

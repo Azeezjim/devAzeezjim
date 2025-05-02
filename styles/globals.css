@@ -22,7 +22,7 @@
   -webkit-overflow-scrolling: touch; /* Enables momentum scroll on iOS */
   scroll-behavior: smooth;
   scrollbar-width: thin;
-  scrollbar-color: #00c6ff transparent;
+  scrollbar-color: #f13024 transparent;
 }
 
 .fancy-scroll::-webkit-scrollbar {
@@ -30,7 +30,7 @@
 }
 
 .fancy-scroll::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #00c6ff, #0072ff);
+  background: linear-gradient(180deg, #ff1900, #0072ff);
   border-radius: 10px;
 }
 
